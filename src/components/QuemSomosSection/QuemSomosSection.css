@@ -1,0 +1,177 @@
+/* QUEM SOMOS - Fiel ao design da imagem, alinhamento responsivo */
+
+.quem-somos-section.section-card {
+  background: #1E392A;
+  /* Remover border e max-width em telas grandes */
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0 auto 24px auto;
+  padding: 40px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.quem-somos-title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  background: #1E392A;
+  padding: 0 20px 0 20px;
+  height: 90px;
+  border-bottom: none;
+  position: relative;
+  justify-content: center;
+}
+
+.quem-somos-main-text {
+  font-family: 'Montserrat', 'Montserrat ExtraBold', sans-serif;
+  font-size: 4.2rem;
+  font-weight: 900;
+  color: #F0F0C0;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  margin-right: 12px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.quem-somos-rotated-text {
+  font-family: 'Montserrat', 'Montserrat ExtraBold', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #F0F0C0;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin-bottom: 0;
+  margin-top: -10px;
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+.quem-somos-paragraph {
+  color: #F0F0F0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
+  padding: 18px 0 12px 0;
+  margin: 0 auto 24px auto;
+  max-width: 700px;
+}
+
+.quem-somos-stats {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
+  border-top: none;
+  margin-top: 16px;
+}
+
+.stat-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 18px;
+  height: auto;
+  border-bottom: none;
+}
+.stat-block:last-child {
+  border-bottom: none;
+}
+.stat-block p {
+  color: #F0F0F0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 8px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.1;
+  white-space: pre-line;
+  text-align: center;
+}
+.stat-block span {
+  color: #F0F0C0;
+  font-size: 2.8rem;
+  font-weight: 900;
+  margin-left: 0;
+  line-height: 1;
+}
+
+.arte-nao-e-hobbie {
+  display: block;
+  margin-top: 18px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #F0F0C0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+@media (max-width: 800px) {
+  .quem-somos-paragraph {
+    font-size: 1rem;
+    max-width: 98vw;
+    padding: 18px 8px 12px 8px;
+  }
+  .quem-somos-title-container {
+    height: 60px;
+    padding: 0 10px 0 10px;
+    justify-content: center;
+  }
+  .quem-somos-main-text {
+    font-size: 3rem;
+  }
+  .quem-somos-rotated-text {
+    font-size: 0.7rem;
+    margin-top: -6px;
+  }
+  .quem-somos-section.section-card {
+    max-width: 98vw;
+    border: 2px solid #3A4C3A;
+    padding: 0;
+    align-items: stretch;
+  }
+  .quem-somos-stats {
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch;
+  }
+  .stat-block {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 18px;
+    height: 60px;
+    border-bottom: 2px solid #3A4C3A;
+  }
+  .stat-block:last-child {
+    border-bottom: none;
+  }
+  .stat-block p {
+    align-items: flex-start;
+    text-align: left;
+    margin: 0;
+  }
+  .stat-block span {
+    margin-left: 12px;
+  }
+}
