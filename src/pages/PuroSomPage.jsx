@@ -34,9 +34,7 @@ function PuroSomPage() {
         </div>
       </main>
       <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: 32 }}>
-        <span aria-label="Play" style={{ fontSize: '2.5rem', color: '#F0F0C0', pointerEvents: 'none', cursor: 'default', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-          &#9654;
-        </span>
+        
       </div>
     </div>
   );
