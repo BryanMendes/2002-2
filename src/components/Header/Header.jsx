@@ -47,6 +47,13 @@ function Header() {
   return (
     <header className={`header-container ${menuAberto ? 'aberto' : 'fechado'} header-visible`}>
       <div className="header-fechado-content">
+        <div className="logo-cd-group">
+            {isDesktop && (
+              <Link to="/puro-som" className="cd-button">
+                <img src="/gif-1.gif" alt="Ícone de CD animado" />
+              </Link>
+            )}
+          </div>
 
         <div className="controles">
           {/* Em telas pequenas, mostrar CD e menu hamburguer lado a lado */}
@@ -69,7 +76,7 @@ function Header() {
             <ul>
               {NAV_ITEMS.map(item => (
                 <li key={item.path}>
-                  <Link to={item.path}>{item.label}</Link>
+                  <Link to={item.path === '/apoia-se' ? '/apoia-se' : item.path}>{item.label}</Link>
                 </li>
               ))}
               <li className="action-item">

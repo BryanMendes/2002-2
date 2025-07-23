@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LazyImage from '../components/LazyImage/LazyImage';
@@ -67,6 +67,3 @@ function Renata() {
 }
 
 export default Renata; 
-=======
-{"code":"rate-limited","message":"You have hit the rate limit. Please upgrade to keep chatting.","providerLimitHit":false,"isRetryable":true} 
->>>>>>> e3b7509b2edaf9c5620d88865dd3fe3c841e6c50

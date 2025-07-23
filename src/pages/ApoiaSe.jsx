@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function ApoiaSe() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -54,21 +55,12 @@ function ApoiaSe() {
               Você pode contribuir com o valor que desejar. Todo apoio é fundamental para mantermos a 2002 viva e expandindo a arte independente no Brasil!
             </p>
             <img src="/qrcode.jpeg" alt="QR Code Apoia-se" style={{ width: '180px', height: '180px', margin: '0 auto 12px auto', display: 'block', borderRadius: '8px', background: '#fff' }} />
-            <div style={{ fontSize: '1.1rem', color: '#F0F0C0', fontWeight: 700, marginBottom: '18px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
+            <div style={{ fontSize: '1.1rem', color: '#F0F0C0', fontWeight: 700, marginBottom: '18px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', textAlign: 'center', flexDirection: 'column' }}>
               chave: {email}
               <button
                 onClick={handleCopy}
-                style={{
-                  background: '#F0F0C0',
-                  color: '#1E392A',
-                  border: 'none',
-                  borderRadius: '4px',
-                  padding: '4px 10px',
-                  fontWeight: 700,
-                  fontSize: '0.95rem',
-                  cursor: 'pointer',
-                  marginLeft: '8px'
-                }}
+                className="saiba-mais-button"
+                style={{ marginTop: '12px', minWidth: 90 }}
               >
                 {copied ? 'Copiado!' : 'Copiar'}
               </button>

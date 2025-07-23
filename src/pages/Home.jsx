@@ -1,4 +1,5 @@
 import Hero from '../components/Hero/Hero.jsx';
+import { Link } from 'react-router-dom';
 import QuemSomosSection from '../components/QuemSomosSection/QuemSomosSection.jsx';
 import ImageCarousel from '../components/ImageCarousel/ImageCarousel.jsx';
 import PuroSomSection from '../components/PuroSomSection/PuroSomSection.jsx';
@@ -59,6 +60,17 @@ function Home() {
       <ArchivesSection />
       <hr className="section-separator" />
       <NewsletterSection />
+      <section style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', margin: '48px auto 0 auto', padding: '0 16px' }}>
+        <Link to="/venha-fazer-parte" className="action-link action-link-large">
+          <div className="action-link-main">
+            <div className="action-link-row">
+              <span>VENHA</span>
+              <span className="parte-inline">PARTE</span>
+            </div>
+            <div className="action-link-bottom">FAZER</div>
+          </div>
+        </Link>
+      </section>
       {/* <hr className="section-separator" /> REMOVIDO do final */}
     </>
   );
