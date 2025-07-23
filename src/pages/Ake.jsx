@@ -52,27 +52,22 @@ function Ake() {
       position: 'relative'
     }}>
       {/* Back button */}
-      <button onClick={() => window.location.href = '/'} style={{
+      <Link to="/" style={{
         position: 'absolute',
         top: '20px',
         left: '20px',
-        width: '60px',
-        height: '60px',
+        width: '100px',
+        height: '100px',
         color: '#F0F0C0',
         textDecoration: 'none',
-        fontSize: '2rem',
+        fontSize: '3rem',
         zIndex: 10,
-        background: 'none',
-        border: 'none',
-        outline: 'none',
-        boxShadow: 'none',
         cursor: 'pointer',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center'
       }}>
         ←
-      </button>
 
       {/* Content */}
       <div style={{

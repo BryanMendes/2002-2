@@ -6,27 +6,22 @@ function DoisMilEDois() {
   return (
     <div style={{ minHeight: '100vh', background: '#1E392A', color: '#F0F0C0', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem', textAlign: 'center', position: 'relative', padding: '40px', paddingTop: '100px' }}>
       {/* Botão de voltar */}
-      <button onClick={() => window.location.href = '/'} style={{
+      <Link to="/" style={{
         position: 'absolute',
         top: '80px',
         left: '20px',
-        width: '60px',
-        height: '60px',
+        width: '100px',
+        height: '100px',
         color: '#F0F0C0',
         textDecoration: 'none',
-        fontSize: '2rem',
+        fontSize: '3rem',
         zIndex: 10,
-        background: 'none',
-        border: 'none',
-        outline: 'none',
-        boxShadow: 'none',
         cursor: 'pointer',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center'
       }}>
         ←
-      </button>
   
       {/* Título 2002. */}
       {/* AQUI A LOGO FOI REDIMENSIONADA */}

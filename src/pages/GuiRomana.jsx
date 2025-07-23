@@ -30,27 +30,22 @@ function GuiRomana() {
         <LazyImage src="/gui-back.png" alt="Fundo Gui Romana" style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scaleX(-1)' }} />
       </div>
       {/* Back button */}
-      <button onClick={() => window.location.href = '/'} style={{
+      <Link to="/" style={{
         position: 'absolute',
         top: '20px',
         left: '20px',
-        width: '60px',
-        height: '60px',
+        width: '100px',
+        height: '100px',
         color: '#F0F0C0',
         textDecoration: 'none',
-        fontSize: '2rem',
+        fontSize: '3rem',
         zIndex: 2,
-        background: 'none',
-        border: 'none',
-        outline: 'none',
-        boxShadow: 'none',
         cursor: 'pointer',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center'
       }}>
         ←
-      </button>
 
       {/* Content */}
       <div style={{
@@ -68,10 +63,30 @@ function GuiRomana() {
         <p style={{marginBottom: '20px', textAlign: 'justify'}}>
           Atualmente é Arte-Educador no CCBB de São Paulo, além de músico com várias apresentações em sua recente e promissora carreira, tocando com artistas como: Whitney Marjorie, estranhos costumes, Peu entre outros.
         </p>
+        
+        {/* Next/Previous artist buttons */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: 800, margin: '60px auto 40px auto', padding: '0 20px', zIndex: 10, position: 'relative' }}>
+          <Link to="/ake" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'left', flex: 1 }}>
+            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 0}}>
+              <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>
+              <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>anterior</span>
+              <span style={{fontSize: '1.5rem', marginTop: '2px'}}>&larr;</span>
+            </div>
+          </Link>
+          <Link to="/rfmees" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'right', flex: 1 }}>
+            <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 0}}>
+              <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>próximo</span>
+              <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>
+              <span style={{fontSize: '1.5rem', marginTop: '2px'}}>&rarr;</span>
+            </div>
+          </Link>
+        </div>
       </div>
+    </div>
+  );
+}
 
-      {/* Next/Previous artist buttons */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: 800, margin: '60px auto 40px auto', padding: '0 20px', zIndex: 10, position: 'relative' }}>
+export default GuiRomana;
         <Link to="/ake" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'left', flex: 1 }}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 0}}>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>
