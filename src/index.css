@@ -140,3 +140,15 @@ strong, b {
   font-weight: 900;
   color: #F0F0C0;
 }
+
+p, span, div, a, button, input, textarea, label {
+  color: #F0F0C0 !important;
+}
+
+/* Exceções para elementos específicos que precisam manter outras cores */
+.hero-content,
+.hero-title,
+.carousel-image-overlay,
+.info-image-text {
+  color: #F0F0F0 !important;
+}

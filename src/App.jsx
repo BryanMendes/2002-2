@@ -2,6 +2,7 @@ import './App.css'
 import Header from './components/Header/Header.jsx'
 import Footer from './components/Footer/Footer.jsx'
 import { Routes, Route, useLocation } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop.jsx';
 import { useEffect, useRef, Suspense, lazy } from 'react';
 import { NO_HEADER_FOOTER_PAGES } from './utils/constants';
 import Home from './pages/Home.jsx';
@@ -21,6 +22,7 @@ const Loja = lazy(() => import('./pages/Loja.jsx'));
 const Bianca = lazy(() => import('./pages/Bianca.jsx'));
 const Renata = lazy(() => import('./pages/Renata.jsx'));
 const Podcast = lazy(() => import('./pages/Podcast.jsx'));
+const Newsletter = lazy(() => import('./pages/Newsletter.jsx'));
 
 // Loading component
 function LoadingSpinner() {
@@ -36,14 +38,6 @@ function LoadingSpinner() {
       Carregando...
     </div>
   );
-}
-
-function ScrollToTop() {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-  return null;
 }
 
 function App() {
@@ -118,6 +112,7 @@ function App() {
           <Route path="/bianca" element={<Bianca />} />
           <Route path="/renata" element={<Renata />} />
           <Route path="/podcast" element={<Podcast />} />
+          <Route path="/newsletter" element={<Newsletter />} />
         </Routes>
       </Suspense>
       {shouldShowHeaderFooter && <Footer />}

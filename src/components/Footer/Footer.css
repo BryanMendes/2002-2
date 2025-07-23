@@ -2,7 +2,7 @@
 
 .footer-section {
   background-color: #1E392A;
-  color: #F0F0F0;
+  color: #F0F0C0;
   padding: 80px 40px;
   display: flex;
   flex-direction: column;
@@ -67,7 +67,7 @@
 .footer-logo,
 .footer-column h5,
 .footer-column a {
-  color: #F0F0F0;
+  color: #F0F0C0;
 }
 
 @media (min-width: 1024px) {

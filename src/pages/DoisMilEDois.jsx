@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LazyImage from '../components/LazyImage/LazyImage';
@@ -5,24 +6,6 @@ import LazyImage from '../components/LazyImage/LazyImage';
 function DoisMilEDois() {
   return (
     <div style={{ minHeight: '100vh', background: '#1E392A', color: '#F0F0C0', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem', textAlign: 'center', position: 'relative', padding: '40px', paddingTop: '100px' }}>
-      {/* Botão de voltar */}
-      <button onClick={() => window.history.back()} style={{
-        position: 'absolute',
-        top: '80px',
-        left: '20px',
-        color: '#F0F0C0',
-        textDecoration: 'none',
-        fontSize: '2rem',
-        zIndex: 10,
-        background: 'none',
-        border: 'none',
-        outline: 'none',
-        boxShadow: 'none',
-        cursor: 'default'
-      }}>
-        ←
-      </button>
-  
       {/* Título 2002. */}
       {/* AQUI A LOGO FOI REDIMENSIONADA */}
       <img
@@ -54,7 +37,7 @@ function DoisMilEDois() {
         </p>
       </div>
       {/* Botões de navegação */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: 600, margin: '48px auto 0 auto', gap: '16px' }}>
+      <section style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', maxWidth: 800, margin: '48px auto 0 auto', padding: '0 16px' }}>
         <Link to="/bianca" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0'}}>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>
@@ -69,9 +52,12 @@ function DoisMilEDois() {
           <span style={{fontSize: '1.5rem', marginTop: '2px'}}>&rarr;</span>
         </div>
       </Link>
-        </div>
+      </section>
     </div>
   );
 }
 
 export default DoisMilEDois;
+=======
+{"code":"rate-limited","message":"You have hit the rate limit. Please upgrade to keep chatting.","providerLimitHit":false,"isRetryable":true}
+>>>>>>> e3b7509b2edaf9c5620d88865dd3fe3c841e6c50
