@@ -21,6 +21,7 @@ const Loja = lazy(() => import('./pages/Loja.jsx'));
 const Bianca = lazy(() => import('./pages/Bianca.jsx'));
 const Renata = lazy(() => import('./pages/Renata.jsx'));
 const Podcast = lazy(() => import('./pages/Podcast.jsx'));
+const Newsletter = lazy(() => import('./pages/Newsletter.jsx'));
 
 // Loading component
 function LoadingSpinner() {
@@ -118,6 +119,7 @@ function App() {
           <Route path="/bianca" element={<Bianca />} />
           <Route path="/renata" element={<Renata />} />
           <Route path="/podcast" element={<Podcast />} />
+          <Route path="/newsletter" element={<Newsletter />} />
         </Routes>
       </Suspense>
       {shouldShowHeaderFooter && <Footer />}
