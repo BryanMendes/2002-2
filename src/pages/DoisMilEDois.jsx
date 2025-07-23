@@ -22,20 +22,14 @@ function DoisMilEDois() {
       }}>
         ←
       </button>
-      {/* Gif de CD */}
-      <picture>
-        <source srcSet="/gif-1.webp" type="image/webp" />
-        <LazyImage src="/gif-1.gif" alt="CD animado" style={{
-          position: 'absolute',
-          top: '20px',
-          right: '20px',
-          width: '60px',
-          height: '60px',
-          zIndex: 10
-        }} />
-      </picture>
+  
       {/* Título 2002. */}
-      <h1 style={{fontSize: '3.5rem', marginBottom: '30px', color: '#F0F0C0', fontWeight: 900, letterSpacing: '-0.04em'}}>2002.</h1>
+      {/* AQUI A LOGO FOI REDIMENSIONADA */}
+      <img
+        src="/logo + saiba mais.png"
+        alt="logo 2002"
+        style={{ width: '300px', height: 'auto', marginBottom: '20px' }}
+      />
       <div style={{
         maxWidth: '600px',
         margin: '0 auto',
@@ -80,4 +74,4 @@ function DoisMilEDois() {
   );
 }
 
-export default DoisMilEDois; 
+export default DoisMilEDois;

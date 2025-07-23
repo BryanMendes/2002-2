@@ -47,16 +47,7 @@ function Header() {
   return (
     <header className={`header-container ${menuAberto ? 'aberto' : 'fechado'} header-visible`}>
       <div className="header-fechado-content">
-        <div className="logo-cd-group">
-          <Link to="/" style={{textDecoration: 'none', color: 'inherit'}}>
-            <div className="logo-2002">2002.</div>
-          </Link>
-          {isDesktop && (
-            <Link to="/puro-som" className="cd-button">
-              <img src="/gif-1.gif" alt="Ícone de CD animado" />
-            </Link>
-          )}
-        </div>
+
         <div className="controles">
           {/* Em telas pequenas, mostrar CD e menu hamburguer lado a lado */}
           {!isDesktop && (
