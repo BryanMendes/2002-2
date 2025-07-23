@@ -6,7 +6,7 @@ function DoisMilEDois() {
   return (
     <div style={{ minHeight: '100vh', background: '#1E392A', color: '#F0F0C0', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem', textAlign: 'center', position: 'relative', padding: '40px', paddingTop: '100px' }}>
       {/* Botão de voltar */}
-      <button onClick={() => window.history.back()} style={{
+      <button onClick={() => window.location.href = '/'} style={{
         position: 'absolute',
         top: '80px',
         left: '20px',
@@ -18,7 +18,7 @@ function DoisMilEDois() {
         border: 'none',
         outline: 'none',
         boxShadow: 'none',
-        cursor: 'default'
+        cursor: 'pointer'
       }}>
         ←
       </button>
@@ -62,7 +62,7 @@ function DoisMilEDois() {
             <span style={{fontSize: '1.5rem', marginTop: '2px'}}>&larr;</span>
           </div>
         </Link>
-        <Link to="/renata" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
+        <Link to="/" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0'}}>
           <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>próximo</span>
           <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>

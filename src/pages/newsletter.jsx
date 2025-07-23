@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Loja() {
+function Newsletter() {
   return (
     <div style={{ minHeight: '100vh', background: '#1E392A', color: '#F0F0C0', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '2.5rem', textAlign: 'center' }}>
       página em construção...
@@ -8,4 +8,4 @@ function Loja() {
   );
 }
 
-export default Loja; 
+export default Newsletter;

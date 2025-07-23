@@ -19,7 +19,7 @@ function Rfmees() {
       position: 'relative'
     }}>
       {/* Back button */}
-      <button onClick={() => window.history.back()} style={{
+      <button onClick={() => window.location.href = '/'} style={{
         position: 'absolute',
         top: '20px',
         left: '20px',
@@ -31,7 +31,7 @@ function Rfmees() {
         border: 'none',
         outline: 'none',
         boxShadow: 'none',
-        cursor: 'default'
+        cursor: 'pointer'
       }}>
         ←
       </button>
@@ -51,14 +51,14 @@ function Rfmees() {
 
       {/* Next/Previous artist buttons */}
       <div style={{ position: 'absolute', bottom: '20px', left: 0, right: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: 800, margin: '0 auto', padding: '0 20px', zIndex: 10 }}>
-        <Link to="/" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'left', flex: 1 }}>
+        <Link to="/gui-romana" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'left', flex: 1 }}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 0}}>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>anterior</span>
             <span style={{fontSize: '1.5rem', marginTop: '2px'}}>&larr;</span>
           </div>
         </Link>
-        <Link to="/gui-romana" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'right', flex: 1 }}>
+        <Link to="/ake" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'right', flex: 1 }}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 0}}>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>próximo</span>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>

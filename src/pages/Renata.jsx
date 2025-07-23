@@ -12,13 +12,13 @@ const imagens = [
 
 function Renata() {
   return (
-    <div style={{ minHeight: '100vh', background: '#1E392A', color: '#F0F0F0', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', fontSize: '1.2rem', textAlign: 'center', position: 'relative', padding: '40px', paddingTop: '100px' }}>
+    <div style={{ minHeight: '100vh', background: '#1E392A', color: '#F0F0C0', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', fontSize: '1.2rem', textAlign: 'center', position: 'relative', padding: '40px', paddingTop: '100px' }}>
       {/* Botão de voltar */}
-      <button onClick={() => window.history.back()} style={{
+      <button onClick={() => window.location.href = '/'} style={{
         position: 'absolute',
         top: '80px',
         left: '20px',
-        color: '#F0F0F0',
+        color: '#F0F0C0',
         textDecoration: 'none',
         fontSize: '2rem',
         zIndex: 10,
@@ -26,7 +26,7 @@ function Renata() {
         border: 'none',
         outline: 'none',
         boxShadow: 'none',
-        cursor: 'default'
+        cursor: 'pointer'
       }}>
         ←
       </button>
@@ -36,13 +36,13 @@ function Renata() {
           <source srcSet="/renata/0.webp" type="image/webp" />
           <LazyImage src="/renata/0.png" alt="Pintura Renata" style={{ width: '100vw', maxWidth: '100%', borderRadius: '12px', boxShadow: '0 4px 24px rgba(0,0,0,0.18)', display: 'block' }} />
         </picture>
-        <h3 className="info-image-text" style={{ position: 'absolute', bottom: '20px', left: '20px', fontSize: '2rem', fontWeight: 900, textTransform: 'uppercase', color: '#F0F0F0', margin: 0, lineHeight: 1, textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>PINTURA</h3>
+        <h3 className="info-image-text" style={{ position: 'absolute', bottom: '20px', left: '20px', fontSize: '2rem', fontWeight: 900, textTransform: 'uppercase', color: '#F0F0C0', margin: 0, lineHeight: 1, textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>PINTURA</h3>
       </div>
       {/* Título */}
-      <h1 style={{fontSize: '2.5rem', margin: '24px 0 0 0', color: '#F0F0F0', fontWeight: 900, letterSpacing: '-0.04em'}}>Renata</h1>
-      <h1 style={{fontSize: '2.5rem', margin: '0 0 24px 0', color: '#F0F0F0', fontWeight: 900, letterSpacing: '-0.04em'}}>Martinelli</h1>
+      <h1 style={{fontSize: '2.5rem', margin: '24px 0 0 0', color: '#F0F0C0', fontWeight: 900, letterSpacing: '-0.04em'}}>Renata</h1>
+      <h1 style={{fontSize: '2.5rem', margin: '0 0 24px 0', color: '#F0F0C0', fontWeight: 900, letterSpacing: '-0.04em'}}>Martinelli</h1>
       {/* Texto descritivo */}
-      <div style={{ maxWidth: '600px', margin: '0 auto 32px auto', lineHeight: 1.6, color: '#F0F0F0', fontSize: '1.1rem', textAlign: 'justify', fontWeight: 500 }}>
+      <div style={{ maxWidth: '600px', margin: '0 auto 32px auto', lineHeight: 1.6, color: '#F0F0C0', fontSize: '1.1rem', textAlign: 'justify', fontWeight: 500 }}>
         <p style={{marginBottom: '20px'}}>
           Renata Martinelli é Artista Visual e Curadora Independente, Historiadora da Arte e Pesquisadora. Desenvolve pesquisas relacionadas ao corpo feminino, memória, território e processos criativos. Sua produção artística inclui obras em aquarela, guache, gravura, papelaria artesanal e outras linguagens. Participou da exposição Portas Abertas (2021), onde expôs as obras Origem (2021) e Infinito Particular - Insônia (2021).
           Participou como curadora do projeto Curadoria de Vida (2020), exposição virtual, e também no Projeto Planeta.Doc - Festival de Filmes Socioambientais, em Santa Catarina (2022).
@@ -57,20 +57,20 @@ function Renata() {
               <source srcSet={img.src.replace('.png', '.webp')} type="image/webp" />
               <LazyImage src={img.src} alt={img.legenda} style={{ width: '100vw', maxWidth: '100%', borderRadius: '8px', marginBottom: '8px', objectFit: 'cover', display: 'block', maxWidth: '320px' }} />
             </picture>
-            <span style={{ fontSize: '1rem', color: '#F0F0F0', marginTop: '4px', whiteSpace: 'pre-line' }}>{img.legenda}</span>
+            <span style={{ fontSize: '1rem', color: '#F0F0C0', marginTop: '4px', whiteSpace: 'pre-line' }}>{img.legenda}</span>
           </div>
         ))}
       </div>
       {/* Botões de navegação */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: 600, margin: '48px auto 0 auto', gap: '16px' }}>
-        <Link to="/" style={{ color: '#F0F0F0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
+        <Link to="/2002" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0'}}>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>anterior</span>
             <span style={{fontSize: '1.5rem', marginTop: '2px'}}>&larr;</span>
           </div>
         </Link>
-        <Link to="/bianca" style={{ color: '#F0F0F0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
+        <Link to="/bianca" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0'}}>
           <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>próximo</span>
           <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>

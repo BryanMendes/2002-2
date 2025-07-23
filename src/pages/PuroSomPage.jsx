@@ -12,8 +12,8 @@ function PuroSomPage() {
   return (
     <div className="puro-som-page-container">
       <header className="puro-som-page-header">
-        <button className="back-arrow" onClick={() => navigate(-1)} aria-label="Voltar">
-          &#60;
+        <button className="back-arrow" onClick={() => window.location.href = '/'} aria-label="Voltar">
+          ←
         </button>
       </header>
       <main className="puro-som-page-main">
