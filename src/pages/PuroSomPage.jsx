@@ -43,3 +43,5 @@ function PuroSomPage() {
 }
 
 export default PuroSomPage; 
+  )
+}
