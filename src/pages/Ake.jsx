@@ -116,7 +116,7 @@ function Ake() {
                 }} />
               </picture>
               <span style={{ fontSize: '1rem', color: '#F0F0C0', marginTop: '4px' }}>{img.legenda}</span>
-            <span style={{ fontSize: '1rem', color: '#F0F0C0', marginTop: '4px' }}>{img.legenda}</span>
+            </div>
           ))}
         </div>
       </div>
