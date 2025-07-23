@@ -34,6 +34,8 @@ function GuiRomana() {
         position: 'absolute',
         top: '20px',
         left: '20px',
+        width: '60px',
+        height: '60px',
         color: '#F0F0C0',
         textDecoration: 'none',
         fontSize: '2rem',
@@ -42,7 +44,10 @@ function GuiRomana() {
         border: 'none',
         outline: 'none',
         boxShadow: 'none',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
       }}>
         ←
       </button>
@@ -66,7 +71,7 @@ function GuiRomana() {
       </div>
 
       {/* Next/Previous artist buttons */}
-      <div style={{ position: 'absolute', bottom: '20px', left: 0, right: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: 800, margin: '0 auto', padding: '0 20px', zIndex: 10 }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: 800, margin: '60px auto 40px auto', padding: '0 20px', zIndex: 10, position: 'relative' }}>
         <Link to="/ake" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'left', flex: 1 }}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 0}}>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>

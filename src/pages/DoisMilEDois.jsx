@@ -10,6 +10,8 @@ function DoisMilEDois() {
         position: 'absolute',
         top: '80px',
         left: '20px',
+        width: '60px',
+        height: '60px',
         color: '#F0F0C0',
         textDecoration: 'none',
         fontSize: '2rem',
@@ -18,7 +20,10 @@ function DoisMilEDois() {
         border: 'none',
         outline: 'none',
         boxShadow: 'none',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
       }}>
         ←
       </button>
@@ -54,7 +59,7 @@ function DoisMilEDois() {
         </p>
       </div>
       {/* Botões de navegação */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: 600, margin: '48px auto 0 auto', gap: '16px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: 600, margin: '60px auto 40px auto', gap: '16px' }}>
         <Link to="/bianca" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0'}}>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>
@@ -62,7 +67,7 @@ function DoisMilEDois() {
             <span style={{fontSize: '1.5rem', marginTop: '2px'}}>&larr;</span>
           </div>
         </Link>
-        <Link to="/" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
+        <Link to="/renata" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0'}}>
           <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>próximo</span>
           <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>

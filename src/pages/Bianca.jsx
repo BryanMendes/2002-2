@@ -20,6 +20,8 @@ function Bianca() {
         position: 'absolute',
         top: '80px',
         left: '20px',
+        width: '60px',
+        height: '60px',
         color: '#F0F0C0',
         textDecoration: 'none',
         fontSize: '2rem',
@@ -28,7 +30,10 @@ function Bianca() {
         border: 'none',
         outline: 'none',
         boxShadow: 'none',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
       }}>
         ←
       </button>
@@ -65,7 +70,7 @@ function Bianca() {
         ))}
       </div>
       {/* Botões de navegação */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: 600, margin: '48px auto 0 auto', gap: '16px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: 600, margin: '60px auto 40px auto', gap: '16px' }}>
         <Link to="/renata" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0'}}>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>

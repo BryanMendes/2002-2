@@ -13,6 +13,7 @@ function PuroSomPage() {
     <div className="puro-som-page-container">
       <header className="puro-som-page-header">
         <button className="back-arrow" onClick={() => window.location.href = '/'} aria-label="Voltar">
+        <button className="back-arrow" onClick={() => window.location.href = '/'} aria-label="Voltar" style={{ width: '60px', height: '60px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           ←
         </button>
       </header>
