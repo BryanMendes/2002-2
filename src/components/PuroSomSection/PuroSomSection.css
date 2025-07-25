@@ -17,12 +17,12 @@
 }
 @media (max-width: 1023px) {
   .puro-som-section.section-card {
-    padding-top: 40px;
+    padding-top: 60px; /* Aumentando o padding superior */
   }
 }
 @media (min-width: 1024px) {
   .puro-som-section.section-card {
-    padding-top: 80px;
+    padding-top: 100px; /* Aumentando o padding superior */
     padding-bottom: 80px;
   }
 }

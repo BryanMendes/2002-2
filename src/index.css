@@ -74,6 +74,7 @@ div[class*="Section"],
 .InfoSection,
 .ArchivesSection,
 .NewsletterSection {
+  padding-top: 80px; /* Adicionando padding-top para todas as seções */
   position: relative;
   z-index: 1;
   /* Ensure sections don't overlap */
@@ -95,9 +96,8 @@ div[class*="Section"],
 
 /* Ensure header stays on top of everything */
 
-/* Header container deve ser fixed */
+/* Header container configurações globais */
 .header-container {
-  position: fixed;
   z-index: 1000;
 }
 

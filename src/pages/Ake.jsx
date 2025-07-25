@@ -49,7 +49,7 @@ function Ake() {
       color: '#F0F0C0', 
       fontSize: '1.2rem',
       textAlign: 'center',
-      padding: '40px',
+      padding: '120px 40px 40px 40px', /* Aumentado o padding superior para evitar sobreposição com o header */
       position: 'relative'
     }}>
       {/* Back button */}

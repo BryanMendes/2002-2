@@ -7,6 +7,7 @@
   align-items: center;
   overflow: hidden;
   background-color: #111; /* Cor de fundo caso o vídeo não carregue */
+  padding-top: 80px; /* Adicionando espaço no topo para o conteúdo não ficar apertado */
 }
 
 .hero-video {

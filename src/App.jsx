@@ -1,8 +1,9 @@
 import './App.css'
 import Header from './components/Header/Header.jsx'
 import Footer from './components/Footer/Footer.jsx'
+import ScrollToAnchor from './components/ScrollToAnchor.jsx'
 import { Routes, Route, useLocation } from 'react-router-dom';
-import { useEffect, useRef, Suspense, lazy } from 'react';
+import { useEffect, Suspense, lazy } from 'react';
 import { NO_HEADER_FOOTER_PAGES } from './utils/constants';
 import Home from './pages/Home.jsx';
 
@@ -39,68 +40,19 @@ function LoadingSpinner() {
   );
 }
 
-function ScrollToTop() {
-  const { pathname } = useLocation();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-  return null;
-}
+// ScrollToAnchor substituiu esta função
 
 function App() {
   const location = useLocation();
-  const scrollPositions = useRef(new Map());
   
   // Pages that should not have header and footer
   const shouldShowHeaderFooter = !NO_HEADER_FOOTER_PAGES.includes(location.pathname);
 
-  // Scroll restoration logic
-  useEffect(() => {
-    const currentPath = location.pathname;
-    const isNoHeaderFooterPage = NO_HEADER_FOOTER_PAGES.includes(currentPath);
-    
-    if (isNoHeaderFooterPage) {
-      // Always scroll to top for artist pages
-      window.scrollTo(0, 0);
-    } else {
-      // For other pages, use saved scroll position or scroll to top
-      const savedPosition = scrollPositions.current.get(currentPath);
-      
-      if (savedPosition !== undefined) {
-        // Restore saved scroll position
-        window.scrollTo(0, savedPosition);
-      } else {
-        // New page, scroll to top
-        window.scrollTo(0, 0);
-      }
-    }
-
-    // Save scroll position when leaving the page (only for non-artist pages)
-    const handleBeforeUnload = () => {
-      if (!isNoHeaderFooterPage) {
-        scrollPositions.current.set(currentPath, window.scrollY);
-      }
-    };
-
-    // Save scroll position when navigating away (only for non-artist pages)
-    const handleScroll = () => {
-      if (!isNoHeaderFooterPage) {
-        scrollPositions.current.set(currentPath, window.scrollY);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('beforeunload', handleBeforeUnload);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('beforeunload', handleBeforeUnload);
-    };
-  }, [location.pathname]);
+  // ScrollToTop component já cuida da rolagem para o topo
 
   return (
     <>
-      <ScrollToTop />
+      <ScrollToAnchor />
       {shouldShowHeaderFooter && <Header />}
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>

@@ -1,6 +1,7 @@
 // Em: src/components/Footer/Footer.jsx
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FOOTER_LINKS } from '../../utils/constants';
 import './Footer.css';
 
@@ -22,7 +23,7 @@ function Footer() {
                 {link.disabled ? (
                   <span style={{color: '#F0F0F0', cursor: 'default'}}>{link.label}</span>
                 ) : (
-                  <a href={link.path}>{link.label}</a>
+                  <Link to={link.path}>{link.label}</Link>
                 )}
               </li>
             ))}
@@ -33,7 +34,9 @@ function Footer() {
           <ul>
             {FOOTER_LINKS.start.map((link, index) => (
               <li key={index}>
-                <a href={link.path}>{link.label}</a>
+                <Link to={link.hash ? { pathname: link.path, hash: link.hash } : link.path}>
+                  {link.label}
+                </Link>
               </li>
             ))}
           </ul>
@@ -43,12 +46,17 @@ function Footer() {
           <ul>
             {FOOTER_LINKS.social.map((link, index) => (
               <li key={index}>
-                <a 
-                  href={link.href} 
-                  {...(link.external && { target: "_blank", rel: "noopener noreferrer" })}
-                >
-                  {link.label}
-                </a>
+                {link.external ? (
+                  <a 
+                    href={link.href} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link to={link.href}>{link.label}</Link>
+                )}
               </li>
             ))}
           </ul>

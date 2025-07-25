@@ -33,10 +33,10 @@ export const FOOTER_LINKS = {
     { label: 'INSPIRE-SE', disabled: true }
   ],
   start: [
-    { path: '/#quem-somos', label: 'QUEM SOMOS' },
-    { path: '/#nossa-arte', label: 'NOSSA ARTE' },
-    { path: '/#novidade-semanal', label: 'NOVIDADE SEMANAL' },
-    { path: '/#artigos', label: 'ARTIGOS' }
+    { path: '/', label: 'QUEM SOMOS', hash: '#quem-somos' },
+    { path: '/', label: 'NOSSA ARTE', hash: '#nossa-arte' },
+    { path: '/', label: 'NOVIDADE SEMANAL', hash: '#novidade-semanal' },
+    { path: '/', label: 'ARTIGOS', hash: '#artigos' }
   ],
   social: [
     { href: 'https://www.instagram.com/2002_pltfrm/', label: 'INSTA', external: true },

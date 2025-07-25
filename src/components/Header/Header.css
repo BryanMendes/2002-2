@@ -1,15 +1,31 @@
 /* Conteúdo completo e final do Header.css */
-.header-container {
-  /* position: fixed; <-- REMOVIDO */
-  /* top: 0; <-- REMOVIDO */
-  /* left: 0; <-- REMOVIDO */
-  /* z-index: 1000; <-- REMOVIDO */
+/* Header para mobile - fixo e acompanha a tela */
+@media (max-width: 1023px) {
+  .header-container {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    transition: background-color 0.4s ease-in-out, transform 0.3s ease;
+    box-sizing: border-box;
+    z-index: 1000;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+  }
+}
 
-  /* As propriedades abaixo são mantidas */
-  width: 100%;
-  padding: 20px;
-  transition: background-color 0.4s ease-in-out, transform 0.3s ease;
-  box-sizing: border-box;
+/* Header para desktop - estático */
+@media (min-width: 1024px) {
+  .header-container {
+    position: static;
+    width: 100%;
+    padding: 20px;
+    transition: background-color 0.4s ease-in-out, transform 0.3s ease;
+    box-sizing: border-box;
+    z-index: 1000;
+    background-color: transparent;
+    margin-bottom: -80px; /* Valor negativo para sobrepor o conteúdo abaixo */
+  }
 }
 
 /* O resto do seu CSS permanece o mesmo */
@@ -17,8 +33,9 @@
 .header-container.fechado {
   background-color: transparent;
 }
+/* Adiciona background quando o menu mobile está aberto */
 .header-container.aberto {
-  background-color: #1E392A;
+  background-color: #022716;
   min-height: 85px;
   display: flex;
   align-items: center;
@@ -36,11 +53,7 @@
   width: 100%;
   color: #F0F0F0;
 }
-.header-logo {
-  height: 40px;
-  display: flex;
-  align-items: center;
-}
+
 .controles {
   display: flex;
   align-items: center;
@@ -56,6 +69,9 @@
   cursor: pointer;
   padding: 0;
   overflow: hidden;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
 }
 .cd-button img {
   position: absolute;
@@ -67,6 +83,10 @@
   border-radius: 50%;
   margin: 0;
   padding: 0;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  z-index: 10;
 }
 .menu-hamburguer {
   cursor: pointer;
@@ -152,6 +172,9 @@
 @media (min-width: 1024px) {
   .header-container {
     padding: 30px 80px;
+    position: static;
+    width: 100%;
+    margin-bottom: -120px; /* Valor negativo maior para desktop */
   }
   
   .header-logo {
@@ -227,7 +250,7 @@
     margin-left: 0;
   }
   .logo-cd-group {
-    display: flex;
+    display: flex !important;
     align-items: center;
     gap: 16px;
   }

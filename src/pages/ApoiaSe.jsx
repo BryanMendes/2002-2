@@ -18,12 +18,26 @@ function ApoiaSe() {
       <h1 style={{ fontSize: '3rem', fontWeight: 900, textTransform: 'uppercase', marginBottom: '32px' }}>Apoia-se</h1>
       <p style={{ maxWidth: 600, fontSize: '1.2rem', textAlign: 'center', lineHeight: 1.5 }}>
           Como uma plataforma independente e agregadora, também precisamos de investimentos e ajuda financeira para conseguir entregar o máximo que a arte pode construir. Por isso contamos com uma aba Apoia-se para você que quiser contribuir com o nosso projeto de maneira rápida e fundamental.<br /><br />
-          <span
-            style={{ color: '#F0F0C0', fontWeight: 400, textDecoration: 'none', cursor: 'default' }}
+          <button
+            className="saiba-mais-button"
             onClick={() => setModalOpen(true)}
+            style={{ 
+              background: 'transparent',
+              border: '2px solid #F0F0C0',
+              color: '#F0F0C0',
+              padding: '12px 24px',
+              borderRadius: '30px',
+              cursor: 'pointer',
+              fontWeight: 'bold',
+              fontSize: '1rem',
+              textDecoration: 'none',
+              display: 'inline-block',
+              textTransform: 'uppercase',
+              margin: '10px auto'
+            }}
           >
-            Clique para saber mais.
-          </span>
+            Contribua com qualquer valor!
+          </button>
           <br /><br />
           Pra que você estará contribuindo?<br /><br />
         Esse dinheiro investido será revertido em pagamentos à artistas, fotógrafos, designers, produção de futuros eventos da plataforma, no podcast Puro Som, produção da nossa loja oficial 2002, DJ’s, lançamentos musicais e de audiovisual como um todo. Portanto, você estará contribuindo com todo cenário de arte independente brasileira, bem como com seus representantes.

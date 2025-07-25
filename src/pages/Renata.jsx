@@ -49,7 +49,7 @@ function Renata() {
       </div>
       {/* Botões de navegação */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: 600, margin: '48px auto 0 auto', gap: '16px' }}>
-        <Link to="/" style={{ color: '#F0F0F0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
+        <Link to="/bianca" style={{ color: '#F0F0F0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0'}}>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>anterior</span>

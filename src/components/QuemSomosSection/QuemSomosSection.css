@@ -7,7 +7,7 @@
   border-radius: 0;
   box-shadow: none;
   margin: 0 auto 24px auto;
-  padding: 40px 20px;
+  padding: 80px 20px 40px 20px; /* Aumentando o padding superior */
   width: 100%;
   display: flex;
   flex-direction: column;

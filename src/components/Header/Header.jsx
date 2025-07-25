@@ -28,18 +28,13 @@ function Header() {
           <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className="header-logo"></div>
           </Link>
-          {isDesktop && (
-            <Link to="/puro-som" className="cd-button">
-              <img src="/gif-1.gif" alt="Ícone de CD animado" />
-            </Link>
-          )}
+          <Link to="/puro-som" className="cd-button">
+            <img src="/gif-1.gif" alt="Ícone de CD animado" />
+          </Link>
         </div>
         <div className="controles">
           {!isDesktop && (
             <>
-              <Link to="/puro-som" className="cd-button">
-                <img src="/gif-1.gif" alt="Ícone de CD animado" />
-              </Link>
               <div className="menu-hamburguer" onClick={() => setMenuAberto(true)}>
                 <div className="linha"></div>
                 <div className="linha"></div>

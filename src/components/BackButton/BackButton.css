@@ -1,6 +1,6 @@
 .back-button {
-  position: fixed;
-  top: 90px; /* Posicionado abaixo do header fixo (header tem min-height: 85px) */
+  position: absolute;
+  top: 100px; /* Aumentado para evitar sobreposição com o header */
   left: 20px;
   color: #F0F0C0;
   background: none;
@@ -10,7 +10,7 @@
   text-decoration: none;
   font-size: 2rem;
   font-weight: 900;
-  z-index: 100; /* Valor alto, mas menor que o header (z-index: 1000) */
+  z-index: 100;
   cursor: pointer;
   transition: color 0.2s;
 }
@@ -22,7 +22,7 @@
 /* Ajuste para telas menores */
 @media (max-width: 768px) {
   .back-button {
-    top: 70px; /* Ajustado para ficar logo abaixo do header em telas menores */
+    top: 80px; /* Aumentado para evitar sobreposição com o header em telas menores */
     left: 16px;
     font-size: 1.8rem; /* Tamanho ligeiramente menor em telas pequenas */
   }

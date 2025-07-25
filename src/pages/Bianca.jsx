@@ -59,7 +59,7 @@ function Bianca() {
             <span style={{fontSize: '1.5rem', marginTop: '2px'}}>&larr;</span>
           </div>
         </Link>
-        <Link to="/" style={{ color: '#F0F0F0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
+        <Link to="/renata" style={{ color: '#F0F0F0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0'}}>
           <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>próximo</span>
           <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>
