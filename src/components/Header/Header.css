@@ -323,21 +323,21 @@
 .navbar-aberta a,
 .navbar-desktop button,
 .navbar-aberta button {
-  color: #F0F0C0 !important;
+  color: #F0F0F0 !important;
 }
 
 .navbar-desktop a:visited,
 .navbar-aberta a:visited,
 .navbar-desktop button:visited,
 .navbar-aberta button:visited {
-  color: #F0F0C0 !important;
+  color: #F0F0F0 !important;
 }
 
 .navbar-desktop a:active,
 .navbar-aberta a:active,
 .navbar-desktop button:active,
 .navbar-aberta button:active {
-  color: #F0F0C0 !important;
+  color: #F0F0F0 !important;
 }
 
 .header-hidden {

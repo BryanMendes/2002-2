@@ -31,7 +31,7 @@ function Hero() {
 
       {/* O conteúdo que fica sobre o vídeo */}
       <div className="hero-content">
-        <img src="/logo + saiba mais.png" alt="logo 2002" />
+        <h1 className="hero-title">2002.</h1>
       </div>
     </section>
   );

@@ -1,65 +1,39 @@
 .newsletter-section {
-  background-color: #1E392A;
-  color: #F0F0F0;
-  text-align: center;
-  padding: 60px 40px;
-  border-top: 1px solid rgba(240, 240, 240, 0.4);
-  border-bottom: 2px solid #3A4C3A;
-  padding-bottom: 32px;
-  margin-bottom: 0;
-}
-
-.newsletter-section h4 {
-  font-size: 1.2rem;
-  margin: 0;
-  padding-bottom: 8px;
-}
-
-.newsletter-section p {
-  font-size: 0.9rem;
-  margin-bottom: 0;
-}
-
-.newsletter-section,
+    background-color: #1E392A;
+    color: #F0F0F0;
+    text-align: center;
+    padding: 60px 40px;
+    border-top: 1px solid rgba(240, 240, 240, 0.4);
+    border-bottom: 2px solid #3A4C3A;
+    padding-bottom: 32px;
+    margin-bottom: 0;
+  }
+  .newsletter-section h4 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .newsletter-section p {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+  .newsletter-section,
 .newsletter-section h4,
 .newsletter-section p {
-  color: #F0F0C0;
+  color: #F0F0F0;
 }
-
-.newsletter-btn-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-}
-
-.newsletter-saiba-btn {
-  background: #1E392A;
-  color: #F0F0C0;
-  border: 2px solid #F0F0C0;
-  border-radius: 30px; /* Bordas mais arredondadas */
-  padding: 12px 36px;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-  text-decoration: none;
-  box-shadow: none;
-}
-
-
-.newsletter-saiba-btn {
-  text-decoration: none !important;
-}
+  .input-wrapper input {
+    background: transparent;
+    border: 2px solid #F0F0F0;
+    border-radius: 30px;
+    height: 50px;
+    width: 100%;
+    max-width: 400px;
+  }
 
 /* Responsividade para desktop */
 @media (min-width: 1024px) {
   .newsletter-section {
     padding: 100px 80px;
-    padding-bottom: 80px;
   }
   
   .newsletter-section h4 {
@@ -68,10 +42,13 @@
   
   .newsletter-section p {
     font-size: 1.1rem;
+    margin-bottom: 50px;
   }
-
-  .newsletter-btn-wrapper {
-    margin-top: 50px;
+  
+  .input-wrapper input {
+    height: 60px;
+    max-width: 500px;
+    font-size: 1.1rem;
   }
 }
 
@@ -87,9 +64,11 @@
   
   .newsletter-section p {
     font-size: 0.8rem;
+    margin-bottom: 20px;
   }
   
-  .newsletter-btn-wrapper {
-    margin-top: 20px;
+  .input-wrapper input {
+    height: 45px;
+    max-width: 300px;
   }
 }

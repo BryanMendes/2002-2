@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LazyImage from '../components/LazyImage/LazyImage';
@@ -6,13 +5,37 @@ import LazyImage from '../components/LazyImage/LazyImage';
 function DoisMilEDois() {
   return (
     <div style={{ minHeight: '100vh', background: '#1E392A', color: '#F0F0C0', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem', textAlign: 'center', position: 'relative', padding: '40px', paddingTop: '100px' }}>
+      {/* Botão de voltar */}
+      <button onClick={() => window.history.back()} style={{
+        position: 'absolute',
+        top: '80px',
+        left: '20px',
+        color: '#F0F0C0',
+        textDecoration: 'none',
+        fontSize: '2rem',
+        zIndex: 10,
+        background: 'none',
+        border: 'none',
+        outline: 'none',
+        boxShadow: 'none',
+        cursor: 'default'
+      }}>
+        ←
+      </button>
+      {/* Gif de CD */}
+      <picture>
+        <source srcSet="/gif-1.webp" type="image/webp" />
+        <LazyImage src="/gif-1.gif" alt="CD animado" style={{
+          position: 'absolute',
+          top: '20px',
+          right: '20px',
+          width: '60px',
+          height: '60px',
+          zIndex: 10
+        }} />
+      </picture>
       {/* Título 2002. */}
-      {/* AQUI A LOGO FOI REDIMENSIONADA */}
-      <img
-        src="/logo + saiba mais.png"
-        alt="logo 2002"
-        style={{ width: '300px', height: 'auto', marginBottom: '20px' }}
-      />
+      <h1 style={{fontSize: '3.5rem', marginBottom: '30px', color: '#F0F0C0', fontWeight: 900, letterSpacing: '-0.04em'}}>2002.</h1>
       <div style={{
         maxWidth: '600px',
         margin: '0 auto',
@@ -37,7 +60,7 @@ function DoisMilEDois() {
         </p>
       </div>
       {/* Botões de navegação */}
-      <section style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', maxWidth: 800, margin: '48px auto 0 auto', padding: '0 16px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: 600, margin: '48px auto 0 auto', gap: '16px' }}>
         <Link to="/bianca" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0'}}>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>
@@ -52,9 +75,9 @@ function DoisMilEDois() {
           <span style={{fontSize: '1.5rem', marginTop: '2px'}}>&rarr;</span>
         </div>
       </Link>
-      </section>
+        </div>
     </div>
   );
 }
 
-export default DoisMilEDois;
+export default DoisMilEDois; 

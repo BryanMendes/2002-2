@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-// CORREÇÃO: 'Link' foi adicionado à importação e 'useNavigate' foi removido.
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './PuroSomPage.css';
 import Podcast from './Podcast.jsx';
 
@@ -8,14 +7,14 @@ function PuroSomPage() {
   useEffect(() => {
     document.title = '2002';
   }, []);
-  // CORREÇÃO: A linha "const navigate = useNavigate();" foi removida por não ser utilizada.
+  const navigate = useNavigate();
 
   return (
     <div className="puro-som-page-container">
       <header className="puro-som-page-header">
-        <Link to="/" className="back-arrow" aria-label="Voltar" style={{ width: '100px', height: '100px', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none', fontSize: '3rem' }}>
-          ←
-        </Link>
+        <button className="back-arrow" onClick={() => navigate(-1)} aria-label="Voltar">
+          &#60;
+        </button>
       </header>
       <main className="puro-som-page-main">
         <h1 className="puro-som-page-title">
@@ -34,12 +33,12 @@ function PuroSomPage() {
         </div>
       </main>
       <div style={{ width: '100%', display: 'flex', justifyContent: 'center', marginTop: 32 }}>
-        
+        <span aria-label="Play" style={{ fontSize: '2.5rem', color: '#F0F0C0', pointerEvents: 'none', cursor: 'default', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          &#9654;
+        </span>
       </div>
     </div>
   );
 }
 
-export default PuroSomPage;
-
-// CORREÇÃO: As linhas ") }" extras que estavam aqui foram removidas.
+export default PuroSomPage; 

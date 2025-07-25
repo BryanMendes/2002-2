@@ -56,7 +56,7 @@
 }
 
 .carousel-caption {
-  color: #F0F0C0;
+  color: #F0F0F0;
   font-weight: bold;
   font-size: 1.1rem;
   text-transform: uppercase;
@@ -72,7 +72,7 @@
   position: absolute;
   bottom: 40px;
   left: 60px;
-  color: #F0F0C0;
+  color: #F0F0F0;
   font-size: 6rem;
   font-weight: 900;
   margin: 0;

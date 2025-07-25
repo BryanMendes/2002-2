@@ -6,13 +6,15 @@ function GuiRomana() {
   return (
     <div style={{ 
       minHeight: '100vh', 
+      display: 'flex', 
+      alignItems: 'center', 
+      justifyContent: 'center',
       position: 'relative',
       color: '#F0F0C0', 
       fontSize: '1.2rem',
       textAlign: 'center',
       padding: '40px',
       overflow: 'hidden',
-      display: 'block'
     }}>
       {/* Imagem de fundo invertida */}
       <div style={{
@@ -28,6 +30,22 @@ function GuiRomana() {
         <LazyImage src="/gui-back.png" alt="Fundo Gui Romana" style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scaleX(-1)' }} />
       </div>
       {/* Back button */}
+      <button onClick={() => window.history.back()} style={{
+        position: 'absolute',
+        top: '20px',
+        left: '20px',
+        color: '#F0F0C0',
+        textDecoration: 'none',
+        fontSize: '2rem',
+        zIndex: 2,
+        background: 'none',
+        border: 'none',
+        outline: 'none',
+        boxShadow: 'none',
+        cursor: 'default'
+      }}>
+        ←
+      </button>
 
       {/* Content */}
       <div style={{
@@ -36,10 +54,7 @@ function GuiRomana() {
         maxWidth: '800px',
         lineHeight: '1.6',
         position: 'relative',
-        zIndex: 1,
-        margin: '0 auto',
-        background: 'none',
-        textAlign: 'center'
+        zIndex: 1
       }}>
         <h1 style={{fontSize: '3rem', marginBottom: '30px', color: '#F0F0C0'}}>gui romana</h1>
         <p style={{marginBottom: '20px', textAlign: 'justify'}}>
@@ -51,22 +66,22 @@ function GuiRomana() {
       </div>
 
       {/* Next/Previous artist buttons */}
-      <section style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '48px', maxWidth: '100vw', margin: '48px auto 0 auto', padding: '0 16px' }}>
-        <Link to="/rfmees" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', minWidth: 160 }}>
+      <div style={{ position: 'absolute', bottom: '20px', left: 0, right: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: 800, margin: '0 auto', padding: '0 20px', zIndex: 10 }}>
+        <Link to="/rfmees" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'left', flex: 1 }}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 0}}>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>anterior</span>
             <span style={{fontSize: '1.5rem', marginTop: '2px'}}>&larr;</span>
           </div>
         </Link>
-        <Link to="/ake" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', minWidth: 160 }}>
+        <Link to="/ake" style={{ color: '#F0F0C0', textDecoration: 'none', fontSize: '1rem', textAlign: 'right', flex: 1 }}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 0}}>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>próximo</span>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>
             <span style={{fontSize: '1.5rem', marginTop: '2px'}}>&rarr;</span>
           </div>
         </Link>
-      </section>
+      </div>
     </div>
   );
 }

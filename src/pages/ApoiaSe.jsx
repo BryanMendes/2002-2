@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 function ApoiaSe() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -11,31 +10,23 @@ function ApoiaSe() {
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
-
   return (
     <div style={{ minHeight: '100vh', background: '#1E392A', color: '#F0F0C0', position: 'relative', padding: '40px 20px', paddingTop: '100px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       {/* Seta de voltar */}
-      <Link to="/" style={{ position: 'absolute', top: '48px', left: '32px', width: '120px', height: '120px', color: '#F0F0C0', textDecoration: 'none', fontSize: '4rem', fontWeight: 900, zIndex: 10, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>←</Link>
+      <button onClick={() => window.location.href = '/'} style={{ position: 'absolute', top: '48px', left: '32px', color: '#F0F0C0', background: 'none', border: 'none', outline: 'none', boxShadow: 'none', textDecoration: 'none', fontSize: '4rem', fontWeight: 900, zIndex: 10 }}>&lt;</button>
       <h1 style={{ fontSize: '3rem', fontWeight: 900, textTransform: 'uppercase', marginBottom: '32px' }}>Apoia-se</h1>
       <p style={{ maxWidth: 600, fontSize: '1.2rem', textAlign: 'center', lineHeight: 1.5 }}>
         Como uma plataforma independente e agregadora, também precisamos de investimentos e ajuda financeira para conseguir entregar o máximo que a arte pode construir. Por isso contamos com uma aba Apoia-se para você que quiser contribuir com o nosso projeto de maneira rápida e fundamental.<br /><br />
-        
-        {/* --- CORREÇÃO APLICADA AQUI --- */}
-        {/* O Link foi trocado por um botão que abre o modal de pagamento */}
-        <button
+        <span
+          style={{ color: '#F0F0C0', fontWeight: 400, textDecoration: 'none', cursor: 'default' }}
           onClick={() => setModalOpen(true)}
-          className="saiba-mais-button"
         >
-          SAIBA MAIS
-        </button>
-        {/* --- FIM DA CORREÇÃO --- */}
-
+          Clique para saber mais.
+        </span>
         <br /><br />
         Pra que você estará contribuindo?<br /><br />
         Esse dinheiro investido será revertido em pagamentos à artistas, fotógrafos, designers, produção de futuros eventos da plataforma, no podcast Puro Som, produção da nossa loja oficial 2002, DJ’s, lançamentos musicais e de audiovisual como um todo. Portanto, você estará contribuindo com todo cenário de arte independente brasileira, bem como com seus representantes.
       </p>
-
-      {/* --- Modal de Pagamento --- */}
       {modalOpen && (
         <div style={{
           position: 'fixed',
@@ -63,12 +54,21 @@ function ApoiaSe() {
               Você pode contribuir com o valor que desejar. Todo apoio é fundamental para mantermos a 2002 viva e expandindo a arte independente no Brasil!
             </p>
             <img src="/qrcode.jpeg" alt="QR Code Apoia-se" style={{ width: '180px', height: '180px', margin: '0 auto 12px auto', display: 'block', borderRadius: '8px', background: '#fff' }} />
-            <div style={{ fontSize: '1.1rem', color: '#F0F0C0', fontWeight: 700, marginBottom: '18px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px', textAlign: 'center', flexDirection: 'column' }}>
+            <div style={{ fontSize: '1.1rem', color: '#F0F0C0', fontWeight: 700, marginBottom: '18px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '10px' }}>
               chave: {email}
               <button
                 onClick={handleCopy}
-                className="saiba-mais-button"
-                style={{ marginTop: '12px', minWidth: 90 }}
+                style={{
+                  background: '#F0F0C0',
+                  color: '#1E392A',
+                  border: 'none',
+                  borderRadius: '4px',
+                  padding: '4px 10px',
+                  fontWeight: 700,
+                  fontSize: '0.95rem',
+                  cursor: 'pointer',
+                  marginLeft: '8px'
+                }}
               >
                 {copied ? 'Copiado!' : 'Copiar'}
               </button>
@@ -87,4 +87,4 @@ function ApoiaSe() {
   );
 }
 
-export default ApoiaSe;
+export default ApoiaSe; 

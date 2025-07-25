@@ -11,7 +11,7 @@
 }
 
 .nossa-arte-title {
-  color: #F0F0C0;
+  color: #F0F0F0;
   font-size: 6rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -19,7 +19,7 @@
   line-height: 1;
   margin: 0;
   padding: 0 0 12px 0;
-  border-bottom: 2px solid rgba(240,240,192,0.4);
+  border-bottom: 2px solid rgba(240,240,240,0.4);
   width: 100%;
   display: block;
 }

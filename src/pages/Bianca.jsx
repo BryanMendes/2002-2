@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LazyImage from '../components/LazyImage/LazyImage';
@@ -16,6 +15,23 @@ const imagens = [
 function Bianca() {
   return (
     <div style={{ minHeight: '100vh', background: '#1E392A', color: '#F0F0F0', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', fontSize: '1.2rem', textAlign: 'center', position: 'relative', padding: '40px', paddingTop: '100px' }}>
+      {/* Botão de voltar */}
+      <button onClick={() => window.history.back()} style={{
+        position: 'absolute',
+        top: '80px',
+        left: '20px',
+        color: '#F0F0F0',
+        textDecoration: 'none',
+        fontSize: '2rem',
+        zIndex: 10,
+        background: 'none',
+        border: 'none',
+        outline: 'none',
+        boxShadow: 'none',
+        cursor: 'default'
+      }}>
+        ←
+      </button>
       {/* Imagem principal com "fotografia" */}
       <div style={{ position: 'relative', width: '100%', maxWidth: '320px', margin: '0 auto' }}>
         <picture>
@@ -49,7 +65,7 @@ function Bianca() {
         ))}
       </div>
       {/* Botões de navegação */}
-      <section style={{ width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', maxWidth: 800, margin: '48px auto 0 auto', padding: '0 16px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%', maxWidth: 600, margin: '48px auto 0 auto', gap: '16px' }}>
         <Link to="/renata" style={{ color: '#F0F0F0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
           <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0'}}>
             <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>
@@ -57,14 +73,14 @@ function Bianca() {
             <span style={{fontSize: '1.5rem', marginTop: '2px'}}>&larr;</span>
           </div>
         </Link>
-        <Link to="/2002" style={{ color: '#F0F0F0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
+        <Link to="/" style={{ color: '#F0F0F0', textDecoration: 'none', fontSize: '1rem', textAlign: 'center', flex: 1 }}>
         <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0'}}>
           <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>próximo</span>
           <span style={{display: 'block', fontWeight: 900, fontSize: '1.1rem', letterSpacing: '0.05em'}}>artista</span>
           <span style={{fontSize: '1.5rem', marginTop: '2px'}}>&rarr;</span>
         </div>
       </Link>
-      </section>
+        </div>
     </div>
   );
 }
