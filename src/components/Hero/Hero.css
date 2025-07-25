@@ -31,13 +31,16 @@
   width: 100%; /* Garantindo que ocupe toda a largura */
 }
 
-.hero-title {
-  font-size: clamp(4rem, 15vw, 10rem); /* Ajustando para desktop */
-  font-weight: bold;
-  margin: 0;
-  line-height: 1;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adicionando sombra para melhor legibilidade */
-  color: white; /* Garantindo que seja branco */
+.hero-logo {
+  max-width: 80%;
+  height: auto;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5)); /* Adicionando sombra para melhor legibilidade */
+}
+
+@media (max-width: 768px) {
+  .hero-logo {
+    max-width: 80%;
+  }
 }
 
 .arrow-down {

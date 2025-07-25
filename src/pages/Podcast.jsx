@@ -47,7 +47,7 @@ function Podcast() {
   };
 
   return (
-    <div style={{ maxWidth: 400, margin: '40px auto', background: '#222', borderRadius: 16, padding: 24, color: '#fff', boxShadow: '0 2px 16px #0004' }}>
+    <div style={{ maxWidth: 400, margin: '40px auto', background: 'rgba(34, 34, 34, 0.45)', borderRadius: 16, padding: 24, color: '#fff', boxShadow: '0 2px 16px rgba(0, 0, 0, 0.2)' }}>
       <h2 style={{ textAlign: 'center', marginBottom: 16, fontWeight: 900, letterSpacing: '0.05em', textTransform: 'uppercase' }}>trailer</h2>
       <LazyImage src={coverImg} alt="Capa do Podcast" style={{ width: '100%', borderRadius: 12, marginBottom: 16 }} />
       <audio
@@ -98,4 +98,4 @@ function Podcast() {
   );
 }
 
-export default Podcast; 
+export default Podcast;

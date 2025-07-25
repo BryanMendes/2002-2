@@ -11,7 +11,7 @@ function QuemSomosSection({ id }) {
       <p className="quem-somos-paragraph">
         A nova plataforma de arte independente!
         <br /><br />
-        Criada e desenvolvida em 2025 por três artistas pretos de São Paulo, a 2002 é uma enorme plataforma que estimula e aprecia a arte independente de suas mais variadas formas. A ideia é simples e complexa ao mesmo tempo, assim como produzir arte e trampar CLT ao mesmo tempo.
+        Criada e desenvolvida em 2025 por três artistas pretos de São Paulo, a 2002 é uma enorme plataforma que estimula e aprecia a arte independente de suas mais variadas formas. A ideia é simples e complexa ao mesmo tempo, assim como produzir arte e trampar CLT.
         <br /><br />
         A 2002 procura ajudar artistas com financiamento coletivo para projetos independentes que queiram trabalhar conosco. A capitalização encima desse trabalho será acordado entre ambas as partes fazendo com que a cena de artistas independente brasileira cresça com todos nós. Estamos aqui pela arte.
         <br /><br />

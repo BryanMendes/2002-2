@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import BackButton from '../components/BackButton/BackButton';
 
 function ApoiaSe() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -13,18 +14,18 @@ function ApoiaSe() {
   return (
     <div style={{ minHeight: '100vh', background: '#1E392A', color: '#F0F0C0', position: 'relative', padding: '40px 20px', paddingTop: '100px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       {/* Seta de voltar */}
-      <button onClick={() => window.location.href = '/'} style={{ position: 'absolute', top: '48px', left: '32px', color: '#F0F0C0', background: 'none', border: 'none', outline: 'none', boxShadow: 'none', textDecoration: 'none', fontSize: '4rem', fontWeight: 900, zIndex: 10 }}>&lt;</button>
+      <BackButton onClick={() => window.location.href = '/'} />
       <h1 style={{ fontSize: '3rem', fontWeight: 900, textTransform: 'uppercase', marginBottom: '32px' }}>Apoia-se</h1>
       <p style={{ maxWidth: 600, fontSize: '1.2rem', textAlign: 'center', lineHeight: 1.5 }}>
-        Como uma plataforma independente e agregadora, também precisamos de investimentos e ajuda financeira para conseguir entregar o máximo que a arte pode construir. Por isso contamos com uma aba Apoia-se para você que quiser contribuir com o nosso projeto de maneira rápida e fundamental.<br /><br />
-        <span
-          style={{ color: '#F0F0C0', fontWeight: 400, textDecoration: 'none', cursor: 'default' }}
-          onClick={() => setModalOpen(true)}
-        >
-          Clique para saber mais.
-        </span>
-        <br /><br />
-        Pra que você estará contribuindo?<br /><br />
+          Como uma plataforma independente e agregadora, também precisamos de investimentos e ajuda financeira para conseguir entregar o máximo que a arte pode construir. Por isso contamos com uma aba Apoia-se para você que quiser contribuir com o nosso projeto de maneira rápida e fundamental.<br /><br />
+          <span
+            style={{ color: '#F0F0C0', fontWeight: 400, textDecoration: 'none', cursor: 'default' }}
+            onClick={() => setModalOpen(true)}
+          >
+            Clique para saber mais.
+          </span>
+          <br /><br />
+          Pra que você estará contribuindo?<br /><br />
         Esse dinheiro investido será revertido em pagamentos à artistas, fotógrafos, designers, produção de futuros eventos da plataforma, no podcast Puro Som, produção da nossa loja oficial 2002, DJ’s, lançamentos musicais e de audiovisual como um todo. Portanto, você estará contribuindo com todo cenário de arte independente brasileira, bem como com seus representantes.
       </p>
       {modalOpen && (
@@ -87,4 +88,4 @@ function ApoiaSe() {
   );
 }
 
-export default ApoiaSe; 
+export default ApoiaSe;

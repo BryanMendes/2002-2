@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BackButton from '../components/BackButton/BackButton';
 
 function VenhaFazerParte() {
   return (
     <div style={{ minHeight: '100vh', background: '#1E392A', color: '#F0F0C0', position: 'relative', padding: '40px 20px', paddingTop: '100px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       {/* Seta de voltar */}
-      <button onClick={() => window.location.href = '/'} style={{ position: 'absolute', top: '48px', left: '32px', color: '#F0F0C0', background: 'none', border: 'none', outline: 'none', boxShadow: 'none', textDecoration: 'none', fontSize: '4rem', fontWeight: 900, zIndex: 10 }}>&lt;</button>
+      <BackButton onClick={() => window.location.href = '/'} />
       
       {/* Título grande com 'PARTE' na vertical */}
       <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'center', width: '100%', marginTop: '80px', marginBottom: '32px' }}>
@@ -23,6 +24,8 @@ function VenhaFazerParte() {
         </p>
         <p style={{ marginBottom: '24px', textAlign: 'left' }}>
           Nosso único requisito é que você seja artista independente e queira contribuir para nossa plataforma e propósito. É super simples, nos escrever um email detalhando:<br />
+        </p>
+         <p style={{ marginBottom: '24px', textAlign: 'left' }}>
           Quem você é (de que lugar do Brasil, idade, interesses e obras);<br />
           Do que se trata seu projeto;<br />
           Qual ajuda você necessita (divulgação, produção, profissionais, artigos sobre seu lançamento, rede de apoio financeiro, entre outros)
@@ -38,4 +41,4 @@ function VenhaFazerParte() {
   );
 }
 
-export default VenhaFazerParte; 
+export default VenhaFazerParte;

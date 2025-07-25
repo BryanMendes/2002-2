@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LazyImage from '../components/LazyImage/LazyImage';
+import BackButton from '../components/BackButton/BackButton';
 
 const imagens = [
   { src: '/renata/0.png', legenda: 'Obra 0' },
@@ -14,22 +15,7 @@ function Renata() {
   return (
     <div style={{ minHeight: '100vh', background: '#1E392A', color: '#F0F0F0', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', fontSize: '1.2rem', textAlign: 'center', position: 'relative', padding: '40px', paddingTop: '100px' }}>
       {/* Botão de voltar */}
-      <button onClick={() => window.history.back()} style={{
-        position: 'absolute',
-        top: '80px',
-        left: '20px',
-        color: '#F0F0F0',
-        textDecoration: 'none',
-        fontSize: '2rem',
-        zIndex: 10,
-        background: 'none',
-        border: 'none',
-        outline: 'none',
-        boxShadow: 'none',
-        cursor: 'default'
-      }}>
-        ←
-      </button>
+      <BackButton />
       {/* Imagem principal com "pintura" */}
       <div style={{ position: 'relative', width: '100%', maxWidth: '320px', margin: '0 auto' }}>
         <picture>
@@ -82,4 +68,4 @@ function Renata() {
   );
 }
 
-export default Renata; 
+export default Renata;

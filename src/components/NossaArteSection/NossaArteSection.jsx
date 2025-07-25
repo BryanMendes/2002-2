@@ -5,10 +5,6 @@ import './NossaArteSection.css';
 // Estes são os dados específicos para ESTE carrossel
 const nossaArteSlides = [
   {
-    imageSrc: '/imagem-nossa-arte-1.png',
-    link: '/2002',
-  },
-  {
     imageSrc: '/imagem-nossa-arte-2.png',
     link: '/renata',
   },

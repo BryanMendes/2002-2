@@ -23,7 +23,6 @@ function Hero() {
         playsInline
         className="hero-video"
         preload="auto"
-        poster="/video-poster.jpg" // Adicionar poster se disponível
       >
         <source src="/video-1.mp4" type="video/mp4" />
         Seu navegador não suporta vídeos.
@@ -31,7 +30,7 @@ function Hero() {
 
       {/* O conteúdo que fica sobre o vídeo */}
       <div className="hero-content">
-        <h1 className="hero-title">2002.</h1>
+        <img src="/logo + saiba mais.png" alt="Logo 2002" className="hero-logo" />
       </div>
     </section>
   );

@@ -12,17 +12,17 @@ import LazyImage from '../components/LazyImage/LazyImage';
 const creatorSlides = [
   {
     imageSrc: '/imagem-carrossel-1.png',
-    captionText: 'AKÉ, RUBENS E GUI DOS IDEALIZADORES DO PROJETO.',
+    captionText: 'AKÉ, RUBENS E GUI ROMANA, OS IDEALIZADORES DO PROJETO.',
     link: '/ake',
   },
   {
     imageSrc: '/imagem-carrossel-2.png',
-    captionText: 'AKÉ, RUBENS E GUI DOS IDEALIZADORES DO PROJETO.',
+    captionText: 'AKÉ, RUBENS E GUI ROMANA, OS IDEALIZADORES DO PROJETO.',
     link: '/rfmees',
   },
   {
     imageSrc: '/imagem-carrossel-3.png',
-    captionText: 'AKÉ, RUBENS E GUI DOS IDEALIZADORES DO PROJETO.',
+    captionText: 'AKÉ, RUBENS E GUI ROMANA, OS IDEALIZADORES DO PROJETO.',
     link: '/gui-romana',
   },
 ];
@@ -39,14 +39,7 @@ function Home() {
       <hr className="section-separator" />
       {/* Não adicionar <hr> após NossaArteSection pois ela já tem linha interna */}
       <NossaArteSection id="nossa-arte" />
-      {/* <hr className="section-separator" /> REMOVIDO */}
-      <InfoSection 
-        id="novidade-semanal"
-        title="NOVIDADE SEMANAL"
-        imageSrc="/image-2.png"
-        imageText="AKÉ"
-        paragraphText="Em um mundo saturado de arte de massa, a 2002 é o espaço onde artistas independentes ganham voz e reconhecimento. Aqui, a criatividade não tem limites, e cada obra tem um espaço único para brilhar. Se você é um artista que deseja se conectar com uma audiência apaixonada, ou alguém em busca de arte autêntica e inovadora, você está no lugar certo."
-      />
+      {/* Seção de novidade semanal removida */}
       <hr className="section-separator" />
       <InfoSection 
         id="artigos"
@@ -54,6 +47,9 @@ function Home() {
         imageSrc="/imagem-3.png"
         imageText="ARTE"
         paragraphText="Renata Martinelli é Artista Visual e Curadora Independente, Historiadora da Arte e Pesquisadora. Desenvolve pesquisas relacionadas ao corpo feminino, memória, território e processos criativos."
+        showButton={true}
+        buttonLink="/artigos"
+        buttonText="Saiba Mais"
       />
       <hr className="section-separator" />
       <ArchivesSection />
@@ -64,4 +60,4 @@ function Home() {
   );
 }
 
-export default Home; 
+export default Home;

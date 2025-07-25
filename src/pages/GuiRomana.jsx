@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LazyImage from '../components/LazyImage/LazyImage';
+import BackButton from '../components/BackButton/BackButton';
 
 function GuiRomana() {
   return (
@@ -30,22 +31,7 @@ function GuiRomana() {
         <LazyImage src="/gui-back.png" alt="Fundo Gui Romana" style={{ width: '100%', height: '100%', objectFit: 'cover', transform: 'scaleX(-1)' }} />
       </div>
       {/* Back button */}
-      <button onClick={() => window.history.back()} style={{
-        position: 'absolute',
-        top: '20px',
-        left: '20px',
-        color: '#F0F0C0',
-        textDecoration: 'none',
-        fontSize: '2rem',
-        zIndex: 2,
-        background: 'none',
-        border: 'none',
-        outline: 'none',
-        boxShadow: 'none',
-        cursor: 'default'
-      }}>
-        ←
-      </button>
+      <BackButton />
 
       {/* Content */}
       <div style={{
@@ -86,4 +72,4 @@ function GuiRomana() {
   );
 }
 
-export default GuiRomana; 
+export default GuiRomana;

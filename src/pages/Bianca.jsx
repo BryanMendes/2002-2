@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LazyImage from '../components/LazyImage/LazyImage';
+import BackButton from '../components/BackButton/BackButton';
 
 const imagens = [
   { src: '/bianca/0.jpg', legenda: 'Foto 0' },
@@ -16,22 +17,7 @@ function Bianca() {
   return (
     <div style={{ minHeight: '100vh', background: '#1E392A', color: '#F0F0F0', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'flex-start', fontSize: '1.2rem', textAlign: 'center', position: 'relative', padding: '40px', paddingTop: '100px' }}>
       {/* Botão de voltar */}
-      <button onClick={() => window.history.back()} style={{
-        position: 'absolute',
-        top: '80px',
-        left: '20px',
-        color: '#F0F0F0',
-        textDecoration: 'none',
-        fontSize: '2rem',
-        zIndex: 10,
-        background: 'none',
-        border: 'none',
-        outline: 'none',
-        boxShadow: 'none',
-        cursor: 'default'
-      }}>
-        ←
-      </button>
+      <BackButton />
       {/* Imagem principal com "fotografia" */}
       <div style={{ position: 'relative', width: '100%', maxWidth: '320px', margin: '0 auto' }}>
         <picture>
@@ -44,12 +30,12 @@ function Bianca() {
         </div>
       </div>
       {/* Título */}
-      <h1 style={{fontSize: '2.5rem', margin: '24px 0 0 0', color: '#F0F0F0', fontWeight: 900, letterSpacing: '-0.04em'}}>Bianca</h1>
+      <h1 style={{fontSize: '2.5rem', margin: '24px 0 0 0', color: '#F0F0F0', fontWeight: 900, letterSpacing: '-0.04em'}}>Bianca Alves</h1>
       
       {/* Texto descritivo */}
       <div style={{ maxWidth: '600px', margin: '0 auto 32px auto', lineHeight: 1.6, color: '#F0F0F0', fontSize: '1.1rem', textAlign: 'justify', fontWeight: 500 }}>
         <p style={{marginBottom: '20px'}}>
-          Bianca é uma artista periférica de São Mateus, Zona Leste de São Paulo, nascida em 2001. Em seu trabalho, ela procura traduzir em fotografia suas experiências pessoais, reflexões acerca da vida e atualmente pesquisa as relações culturais entre natureza e arte, estudo que também influencia seu olhar/produção artística.
+          Bianca Alves (São Mateus, Zona Leste de São Paulo, 2001) é artista visual e historiadora da arte. Seu trabalho parte da fotografia como ferramenta para traduzir experiências pessoais, memórias, afetos e percepções do cotidiano, atravessando o sensível, o político e o poético. Sua pesquisa atual investiga as relações entre natureza e cultura, e como esses diálogos se refletem na arte — tema que também guia sua produção artística e seu modo de pensar o mundo.
         </p>
       </div>
       {/* Galeria de imagens */}
@@ -85,4 +71,4 @@ function Bianca() {
   );
 }
 
-export default Bianca; 
+export default Bianca;

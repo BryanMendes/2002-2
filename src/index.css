@@ -59,10 +59,7 @@ img, video {
 }
 
 /* Z-index stacking context - ensure proper layering */
-#root {
-  position: relative;
-  z-index: 1;
-}
+
 
 /* Ensure all sections have proper stacking - they should not overlap */
 section, 
@@ -97,11 +94,10 @@ div[class*="Section"],
 }
 
 /* Ensure header stays on top of everything */
-header, 
-div[class*="header"], 
-div[class*="Header"],
+
+/* Header container deve ser fixed */
 .header-container {
-  position: relative;
+  position: fixed;
   z-index: 1000;
 }
 

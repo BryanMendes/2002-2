@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BackButton from '../components/BackButton/BackButton';
 
 function Rfmees() {
   return (
@@ -19,22 +20,7 @@ function Rfmees() {
       position: 'relative'
     }}>
       {/* Back button */}
-      <button onClick={() => window.history.back()} style={{
-        position: 'absolute',
-        top: '20px',
-        left: '20px',
-        color: '#F0F0C0',
-        textDecoration: 'none',
-        fontSize: '2rem',
-        zIndex: 10,
-        background: 'none',
-        border: 'none',
-        outline: 'none',
-        boxShadow: 'none',
-        cursor: 'default'
-      }}>
-        ←
-      </button>
+      <BackButton />
 
       {/* Content */}
       <div style={{
@@ -70,4 +56,4 @@ function Rfmees() {
   );
 }
 
-export default Rfmees; 
+export default Rfmees;

@@ -14,7 +14,9 @@ function ArchivesSection() {
         </video>
         <div className="archives-overlay">
           <h2>ARQUIVOS</h2>
-          <button>INSPIRE-SE</button>
+          <Link to="/arquivos">
+            <button>INSPIRE-SE</button>
+          </Link>
         </div>
       </div>
       {/* Bloco com o conteúdo de texto e botões */}
@@ -23,7 +25,7 @@ function ArchivesSection() {
         <p className="archives-paragraph">
           EM UM MUNDO SATURADO DE ARTE DE MASSA, A 2002 É O ESPAÇO ONDE ARTISTAS INDEPENDENTES GANHAM VOZ E RECONHECIMENTO. AQUI, A CRIATIVIDADE NÃO TEM LIMITES, E CADA OBRA TEM UM ESPAÇO ÚNICO PARA BRILHAR. SE VOCÊ É UM ARTISTA QUE DESEJA SE CONECTAR COM UMA AUDIÊNCIA APAIXONADA, OU ALGUÉM EM BUSCA DE ARTE AUTÊNTICA E INOVADORA, VOCÊ ESTÁ NO LUGAR CERTO.
         </p>
-        <Link to="/apoia-se" className="saiba-mais-button">SAIBA MAIS</Link>
+        <Link to="/venha-fazer-parte" className="saiba-mais-button">SAIBA MAIS</Link>
       </div>
     </section>
   );

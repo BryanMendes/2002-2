@@ -30,8 +30,7 @@ export const FOOTER_LINKS = {
   help: [
     { path: '/', label: 'INÍCIO' },
     { label: 'PROJETOS', disabled: true },
-    { label: 'INSPIRE-SE', disabled: true },
-    { path: '/2002', label: '2002' }
+    { label: 'INSPIRE-SE', disabled: true }
   ],
   start: [
     { path: '/#quem-somos', label: 'QUEM SOMOS' },

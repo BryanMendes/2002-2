@@ -1,27 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BackButton from '../components/BackButton/BackButton';
 import LazyImage from '../components/LazyImage/LazyImage';
 
 function DoisMilEDois() {
   return (
     <div style={{ minHeight: '100vh', background: '#1E392A', color: '#F0F0C0', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', fontSize: '1.2rem', textAlign: 'center', position: 'relative', padding: '40px', paddingTop: '100px' }}>
       {/* Botão de voltar */}
-      <button onClick={() => window.history.back()} style={{
-        position: 'absolute',
-        top: '80px',
-        left: '20px',
-        color: '#F0F0C0',
-        textDecoration: 'none',
-        fontSize: '2rem',
-        zIndex: 10,
-        background: 'none',
-        border: 'none',
-        outline: 'none',
-        boxShadow: 'none',
-        cursor: 'default'
-      }}>
-        ←
-      </button>
+      <BackButton />
       {/* Gif de CD */}
       <picture>
         <source srcSet="/gif-1.webp" type="image/webp" />
@@ -80,4 +66,4 @@ function DoisMilEDois() {
   );
 }
 
-export default DoisMilEDois; 
+export default DoisMilEDois;
