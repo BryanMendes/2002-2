@@ -40,7 +40,7 @@ export const FOOTER_LINKS = {
   ],
   social: [
     { href: 'https://www.instagram.com/2002_pltfrm/', label: 'INSTA', external: true },
-    { href: '#', label: 'TIKTOK' },
-    { href: '#', label: 'X' }
+    { href: 'https://www.tiktok.com/@2002.pltfrm?_t=ZM-8yHMK29KuZk&_r=1', label: 'TIKTOK' },
+    { href: '#', label: 'X', external: true }
   ]
 };

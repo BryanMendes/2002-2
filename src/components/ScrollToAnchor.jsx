@@ -21,6 +21,16 @@ function ScrollToAnchor() {
     } else if (location.pathname !== lastHash.current) {
       // Se não houver hash e o pathname mudou, role para o topo
       window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      
+      // Gambiarra: força o scroll para o topo novamente após pequenos delays
+      // para garantir que a página realmente role para o topo
+      setTimeout(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      }, 50);
+      
+      setTimeout(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      }, 150);
     }
   }, [location]);
 

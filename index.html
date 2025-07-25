@@ -12,5 +12,14 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      // Gambiarra para garantir que a página sempre role para o topo quando carregada
+      window.onload = function() {
+        window.scrollTo(0, 0);
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+        }, 100);
+      };
+    </script>
   </body>
 </html>
